@@ -119,7 +119,7 @@ def rep_with_upper(string):
 
 def swap_letters(string):
     if len(string) < 2:
-        return
+        return string
     else:
         first_two_letters = string[:2]
         last_two_letters = string = string[-2:]
