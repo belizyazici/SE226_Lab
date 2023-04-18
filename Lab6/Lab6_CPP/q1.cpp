@@ -16,7 +16,7 @@ int main() {
     cout<<"Enter x: ";
     cin>>x;
 
-    double* b = new double [x];
+    double* b = new double[x];
 
     for (int i = 1; i <= x; i++){
          b[i-1] = pow(n, i) / factorial(i);
