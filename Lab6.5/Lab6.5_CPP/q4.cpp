@@ -17,7 +17,7 @@ string sortString(string s) {
     return s;
 }
 
-bool areAnagrams(string s1, string s2) {
+bool anagrams(string s1, string s2) {
     s1 = sortString(removeSpaces(toLowercase(s1)));
     s2 = sortString(removeSpaces(toLowercase(s2)));
 
@@ -31,7 +31,7 @@ int main() {
     int n = sizeof(wordList) / sizeof(wordList[0]);
 
     for (int i = 0; i < n; i++) {
-        if (areAnagrams(word, wordList[i])) {
+        if (anagrams(word, wordList[i])) {
             cout << wordList[i] << " ";
         }
     }
