@@ -2,7 +2,7 @@
 using namespace std;
 #include <algorithm>
 
-string toLowercase(string l) {
+string toLowerCase(string l) {
     transform(l.begin(), l.end(), l.begin(), ::tolower);
     return l;
 }
@@ -18,8 +18,8 @@ string sortString(string s) {
 }
 
 bool anagrams(string s1, string s2) {
-    s1 = sortString(removeSpaces(toLowercase(s1)));
-    s2 = sortString(removeSpaces(toLowercase(s2)));
+    s1 = sortString(removeSpaces(toLowerCase(s1)));
+    s2 = sortString(removeSpaces(toLowerCase(s2)));
 
     return s1 == s2;
 }
